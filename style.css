@@ -3,10 +3,10 @@
 :root {
   --header-height: 3.5rem;
   
-  --first-color: hsl(79, 72%, 55%);
-  --first-color-light: hsl(79, 97%, 77%);
+  --first-color: #37B7C3;
+  --first-color-light: #EBF4F6;
   --first-color-alt: hsl(79, 67%, 52%);
-  --first-color-dark: hsl(79, 63%, 50%);
+  --first-color-dark: #088395;
   --first-color-gray: hsl(79, 6%, 64%);
   --title-color: hsl(180, 4%, 98%);
   --title-color-black: hsl(180, 4%, 12%);
@@ -172,9 +172,15 @@ img {
 }
 
 .nav__logo {
+  width: 2.25rem;
+  height: 2.25rem;
+  background-color: var(--first-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
   align-items: center;
   column-gap: .5rem;
-  font-weight: var(--font-bold);
 }
 
 .nav__logo img {
@@ -208,7 +214,15 @@ img {
   row-gap: 2.5rem;
 }
 
+.nav__item__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+}
+
 .nav__link {
+  display: flex;
+  align-items: center;
   color: var(--title-color);
   transition: color .3s;
 }
@@ -231,12 +245,17 @@ img {
   border: none;
 }
 
+.nav__button {
+  border-radius: 20px;
+  margin-top: 0.5rem;
+}
+
 .show-menu {
   right: 0;
 }
 
 .bg-header {
-  background-color: var(--body-color);
+  background-color: transparent;
   box-sizing: 0 4px 8px hsla(180, 12%, 4%, .3);
 }
 
@@ -323,6 +342,7 @@ img {
 
 .button:hover {
   background-color: var(--first-color-dark);
+  color: var(--first-color-light);
 }
 
 .button i {
@@ -335,6 +355,8 @@ img {
   align-items: center;
   justify-content: center;
   column-gap: .5rem;
+  border: var(--first-color);
+  border-radius: 20px;
 }
 
 .button__flex:hover i{
@@ -849,6 +871,16 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .nav__logo {
+    height: 2.75rem;
+    width: 2.75rem;
+    margin-top: 0.75rem;
+  }
+
+  .nav__logo img {
+    width: 1.5rem;
+  }
+
   .nav__menu {
     width: 50%;
   }
@@ -936,6 +968,23 @@ img {
     padding: 0;
     align-items: center;
     column-gap: 4rem;
+  }
+
+  .nav__item__container {
+    margin-right: 5.25rem;
+    margin-top: 0.5rem;
+    height: 2rem;
+    border-radius: 10px;
+    width: 30rem;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0;
+    align-items: center;
+    column-gap: 4rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
 
   .section {
