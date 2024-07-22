@@ -65,7 +65,7 @@ input {
 } 
 
 body {
-  background-color: var(--body-color);
+  background: linear-gradient(180.2deg, rgb(30, 33, 48) 6.8%, rgb(74, 98, 110) 131%);;
   color: var(--text-color);
 }
 
@@ -205,6 +205,12 @@ img {
     border-left: 2px solid var(--first-color-gray);
     transition: right .3s;
   }
+
+  .home__images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .nav__list {
@@ -298,35 +304,11 @@ img {
   margin-bottom: 2.5rem;
 }
 
-.home__triangle {
-  height: 325px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  clip-path: polygon(100% 0, 0 100%, 100% 100%);
-} 
-
-.home__triangle-1 {
-  width: 105px;
-  background-color: var(--first-color);
-}
-
-.home__triangle-2 {
-  width: 205px;
-  background-color: var(--first-color-alt);
-}
-
-.home__triangle-3 {
-  width: 305px;
-  background-color: var(--first-color-dark);
-}
-
 .home__img {
   display: block;
   position: relative;
   z-index: 1;
   width: 350px;
-  margin: 0 auto;
 }
 
 .button {
@@ -361,16 +343,6 @@ img {
 
 .button__flex:hover i{
   transform: translateX(.25rem);
-}
-
-.logos__container {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  justify-items: center;
-}
-
-.logos__img {
-  width: 120px;
 }
 
 .program__container {
@@ -836,17 +808,19 @@ img {
     margin-right: 1rem;
   }
 
+  .home__title {
+    font-size: var(--bigger-font-size);
+  }
+
   .section__titles {
     flex-direction: column;
     row-gap: .25rem;
   }
 
-  .home__triangle,
   .choose__triangle {
     height: 225px;
   }
 
-  .home__triangle-3,
   .choose__triangle-1 {
     width: 260px;
   }
@@ -898,8 +872,8 @@ img {
     text-align: initial;
   }
 
-  .logos__container {
-    grid-template-columns: repeat(4, 1fr);
+  .home__title {
+    font-size: 2rem;
   }
 
   .program__container {
@@ -1002,6 +976,7 @@ img {
 
   .home__title {
     margin: .75rem 0 1.25rem;
+    font-size: 4rem;
   }
 
   .home__description {
@@ -1010,33 +985,11 @@ img {
   }
 
   .home__img {
-    width: 550px;
+    width: 450px;
     transform: translateX(-6rem);
+    margin-top: -10rem;
   }
 
-  .home__triangle {
-    height: 700px;
-  }
-
-  .home__triangle-1 {
-    width: 145px;
-  }
-
-  .home__triangle-2 {
-    width: 345px;
-  }
-
-  .home__triangle-3 {
-    width: 545px;
-  }
-
-  .logos {
-    padding: 3.5rem 0 1rem;
-  }
-
-  .logos__img {
-    width: 190px;
-  }
 
   .choose__overflow {
     overflow: hidden;
@@ -1100,24 +1053,10 @@ img {
   }
 
   .home__img {
-    width: 700px;
+    width: 500px;
     transform: translateX(2rem);
-  }
-
-  .home__triangle {
-    height: 995px;
-  }
-
-  .home__triangle-1 {
-    width: 305px;
-  }
-
-  .home__triangle-2 {
-    width: 505px;
-  }
-
-  .home__triangle-3 {
-    width: 705px;
+    margin-left: 8rem;
+    margin-top: -8rem;
   }
 
   .program__container {
