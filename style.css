@@ -65,7 +65,7 @@ input {
 } 
 
 body {
-  background: linear-gradient(180.2deg, rgb(30, 33, 48) 6.8%, rgb(74, 98, 110) 131%);;
+  background: linear-gradient(180.2deg, rgb(30, 33, 48) 6.8%, rgb(74, 98, 110) 131%);
   color: var(--text-color);
 }
 
@@ -141,12 +141,15 @@ img {
 
 .header {
   width: 100%;
-  background-color: transparent;
+  height: 4.5rem;
+  background: transparent;
   position: fixed;
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
   transition: background .3s;
+
+  align-content: center;
 }
 
 .nav {
@@ -244,7 +247,6 @@ img {
 
 .nav__button {
   border-radius: 20px;
-  margin-top: 0.5rem;
 }
 
 .show-menu {
@@ -799,7 +801,6 @@ img {
   .nav__logo {
     height: 2.75rem;
     width: 2.75rem;
-    margin-top: 0.75rem;
   }
 
   .nav__logo img {
@@ -897,7 +898,6 @@ img {
 
   .nav__item__container {
     margin-right: 5.25rem;
-    margin-top: 0.5rem;
     height: 2rem;
     border-radius: 10px;
     width: 30rem;
