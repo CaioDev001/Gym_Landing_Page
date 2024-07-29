@@ -386,6 +386,12 @@ img {
   transition: color .5s;
 }
 
+.section__subtitle {
+  font-family: var(--second-font);
+  text-align: center;
+  font-size: 1.5rem;
+}
+
 .program__button {
   justify-self: flex-end;
   margin-top: 1.5rem;
@@ -444,6 +450,11 @@ img {
   display: flex;
   justify-content: center;
   align-items: end;
+  transition: .5s;
+}
+
+.card:hover {
+  transform: scale(1.07);
 }
 
 .teacher__name {
@@ -629,6 +640,7 @@ img {
   column-gap: .5rem;
   font-weight: var(--font-bold);
   margin-bottom: 1.5rem;
+  width: 1.5rem;
 }
 
 .footer__logo img {
@@ -826,11 +838,6 @@ img {
     justify-content: center;
   }
 
-  .section__subtitle {
-    text-align: center;
-    font-family: var(--second-font);
-  }
-
   .teachers__cards {
     display: grid;
     grid-template-columns: repeat(2, 225px);
@@ -898,7 +905,7 @@ img {
     flex-direction: row;
     padding: 0;
     align-items: center;
-    column-gap: 4rem;
+    column-gap: 3.5rem;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -907,6 +914,10 @@ img {
 
   .section {
     padding: 7rem 0 0;
+  }
+
+  .section__subtitle {
+    font-size: 2rem;
   }
 
   .home__container {

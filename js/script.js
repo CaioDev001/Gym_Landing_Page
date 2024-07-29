@@ -90,9 +90,9 @@ const calculateBmi = (e) => {
   const kg = calculateKg.value
   const bmi = Math.round(kg / (cm * cm))
 
-  if (bmi < 18.5) showMessage(`Your BMI is ${bmi} and you are skinny`, "color-green")
-  else if (bmi < 25) showMessage(`Your BMI is ${bmi} and you are healthy`, "color-green")
-  else showMessage(`Your BMI is ${bmi} and you are overweight`, "color-green")
+  if (bmi < 18.5) showMessage(`Seu IMC é ${bmi}, você está magro`, "color-green")
+  else if (bmi < 25) showMessage(`Seu IMC é ${bmi}, você está saudável`, "color-green")
+  else showMessage(`Seu IMC é ${bmi}, você está acima do peso`, "color-green")
 
   clearInputs()
 }
